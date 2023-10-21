@@ -107,6 +107,7 @@ MonoBehaviour:
   _rotateTime: 2.5
   _head: {fileID: 1157396618520097745}
   _rb: {fileID: 6294567805405609305}
+  _gap: 20
 --- !u!114 &6237809332265976404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,7 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e0ff8f3c9d712347a5a8f3a0c098a51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tailPrefab: {fileID: 3759667736081928535, guid: 46dd2c97009237140bd13c0fdd17b0e8, type: 3}
+  _tailPrefab: {fileID: 2539989593099651245, guid: 46dd2c97009237140bd13c0fdd17b0e8, type: 3}
   _snakeTailHolder: {fileID: 0}
 --- !u!114 &6673324602220082075
 MonoBehaviour:

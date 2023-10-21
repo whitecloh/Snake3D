@@ -15,7 +15,7 @@ public class TailController : MonoBehaviour
         _moveSpeed = _snake.GetMoveSpeed;
         _gap = _snake.GetGap;
     }
-    private void Update()
+    private void FixedUpdate()
     {
         Move();
     }
@@ -25,7 +25,7 @@ public class TailController : MonoBehaviour
         int index = 0;
         foreach (var body in _snake.TailParts)
         {
-            Vector3 point = _positionsHistory[Mathf.Clamp(index * _gap, 0, _positionsHistory.Count - 1)];
+            Vector3 point = _positionsHistory[Mathf.Min(index * _gap, _positionsHistory.Count - 1)];
             Vector3 moveDirection = point - body.transform.position;
             body.transform.position += _moveSpeed * Time.deltaTime * moveDirection;
             body.transform.LookAt(point);

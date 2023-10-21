@@ -11,31 +11,12 @@ public class Snake : MonoBehaviour
     private Transform _head;
     [SerializeField]
     private Rigidbody _rb;
+    [SerializeField]
+    private int _gap;
 
-    public float GetRotateTime
-    { 
-        get 
-        {
-            return _rotateTime;
-        }
-        private set { }
-    }
-    public float GetMoveSpeed
-    {
-        get
-        {
-            return _moveSpeed;
-        }
-        private set { }
-    }
-    public int GetGap
-    {
-        get
-        {
-            return (int)(200 / _moveSpeed);
-        }
-        private set { }
-    }
+    public float GetRotateTime => _rotateTime;
+    public float GetMoveSpeed => _moveSpeed;
+    public int GetGap => _gap;
 
     public Rigidbody GetRigibody => _rb;
     public Transform Head => _head;
